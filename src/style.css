@@ -1,0 +1,40 @@
+:root {
+  --green: #d3f8e2;
+  --purple: #e4c1f9;
+  --magenta: #f694c1;
+  --yellow: #ede7b1;
+  --blue: #a9def9;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.dropdown {
+  background-color: var(--magenta);
+  font-size: 2rem;
+}
+
+.dropper {
+  background-color: var(--green);
+  padding: 1rem;
+}
+
+.drops {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+}
+
+.drops a {
+  color: var(--magenta);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.dropper a {
+  color: var(--magenta);
+  text-decoration: none;
+}
