@@ -1,4 +1,4 @@
-import './style.css';
+// import './style.css';
 
 function hideMenu(element) {
   element.setAttribute('class', 'drops hidden');
@@ -18,6 +18,9 @@ function showMenu(event) {
     });
   }
 }
+const createDropDownMenu = () => {
+  const contentDiv = document.getElementById('content');
+  contentDiv.addEventListener('mouseover', showMenu);
+};
 
-const contentDiv = document.getElementById('content');
-contentDiv.addEventListener('mouseover', showMenu);
+module.exports = { createDropDownMenu };

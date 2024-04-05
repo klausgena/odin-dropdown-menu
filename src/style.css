@@ -10,6 +10,20 @@ body {
   background-color: var(--yellow);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  margin: 0;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--green);
+}
+
+.regular-item {
+  background-color: var(--green);
+  font-size: 2rem;
+  padding: 1rem;
+  color: var(--blue);
 }
 
 .dropdown {
@@ -20,21 +34,52 @@ body {
 .dropper {
   background-color: var(--green);
   padding: 1rem;
+  position: relative;
+}
+
+.drop-btn {
+  border: none;
+  font-size: 2rem;
+  color: var(--purple);
+  background-color: var(--green);
 }
 
 .drops {
   display: flex;
   flex-direction: column;
   background-color: var(--blue);
+  position: absolute;
+}
+
+ul.drops {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+ul.drops:hover {
+  opacity: 1;
+}
+
+.drops li {
+  list-style: none;
+  font-size: 2rem;
+  font-style: normal;
+  padding: 0.5rem;
+}
+
+.drops a:hover {
+  color: var(--magenta);
 }
 
 .drops a {
-  color: var(--magenta);
+  color: var(--green);
   text-decoration: none;
-  padding: 1rem;
+  transition: color 0.5s ease-in-out;
 }
 
-.dropper a {
-  color: var(--magenta);
-  text-decoration: none;
+.hidden {
+  display: none;
 }

@@ -7,14 +7,30 @@
 
   <body>
     <div id="content">
-      <div class="dropdown">
-        <div class="dropper"><a href="#">Menu</a></div>
-        <div class="drops">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
+      <nav class="top-menu">
+        <nav class="dropper">
+          <button class="drop-btn">Menu</button>
+          <ul class="drops hidden">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+          </ul>
+        </nav>
+        <nav class="regular-item">Other</nav>
+        <nav class="regular-item">Another</nav>
+        <nav class="dropper">
+          <button class="drop-btn">Third</button>
+          <ul class="drops hidden">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+          </ul>
+        </nav>
+      </nav>
     </div>
     <script src="main.js"></script>
   </body>
